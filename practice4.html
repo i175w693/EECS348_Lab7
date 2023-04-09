@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <h1>Practice 4</h1>
+</head>
+
+<body>
+    <form action="practice4.php" method="get">
+        Size of the multiplication table: <input type="size" name="size" id = "size" required><br>
+        <input type="submit">
+    </form>
+
+    <?php
+        if (isset($_GET["size"])) {
+            include("practice4.php");
+        }
+    ?>
+
+</body>
+
+</html>
